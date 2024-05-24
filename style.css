@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:cursive;
+}
+body{
+    background-color: #000c14;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+/* cursor style */
+#cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: fixed;
+}
+
+/* Adding style to navbar */
+.navbar{
+    background: none;
+    position: fixed;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: +10;
+}
+
+.nav-cont{
+    color: rgb(167, 254, 255);
+}
+.nav-cont:hover{
+    color:darkturquoise;
+}
+.nav-cont:active{
+    color: #9FFFCB;
+}
+.dcont{
+    background: transparent;
+    color: #000c14;
+}
+.dcont:hover{
+    background-color:deepskyblue;
+    color: #000c14;
+}
+.search-btn{
+    display: flex;
+    padding: 5px;
+    background: rgb(167, 254, 255);
+    border: none;
+    border-radius: 5px;
+    color: #000c14;
+}
+.search-btn:hover{
+    border: 2px solid rgb(167, 254, 255);
+    color: rgb(167, 254, 255);
+    background: none;
+}
+
+/* adding style to header */
+#rollover{
+    position: absolute;
+    margin: 50px;
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+.head-big{
+    position: relative;
+    top: 200px;
+    font-size: 50px;
+    color:darkgoldenrod;
+}
+.content{
+    position: relative;
+    top: 300px;
+    font-size: 40px;
+    color: brown;
+}
+
+/* triggerimg */
+.scrolltrigger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.trigimg{
+    position: relative;
+    top: 400px;
+    width: 80vw;
+    height: 500px;
+    background: url(./images/tech.png);
+    background-size: cover;
+}
+/* SUPPORT CARD */
+.support-card{
+    width: 90%;
+    position: relative;
+    top: 600px;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background: linear-gradient(#0e0046,#004b00);
+    border:2px solid #004b00;
+    animation-name: colour;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: 50;
+    animation-direction: alternate;
+}
+@keyframes colour{
+    from{background: linear-gradient(#0e0046,#004b00);}
+    to{background: linear-gradient(#319efe,#19f319);}
+}
+.big{
+    margin: 10px;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+.small{
+    width: 400px;
+    margin: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #EEE5FFBD;
+}
+.icon-box{
+    display: flex;
+}
+.icons{
+    width: 441px;
+    margin: 20px;
+    height: 48px;
+    background-image: url(./images/motionarteffect-img8.png);
+    background-size: cover;
+}
+/* .support-card:hover{
+    background: linear-gradient(#24dcfd,#2eff2e);
+    border:2px solid #2eff2e;
+} */
+
+footer{
+    position: relative;
+    top: 700px;
+    bottom: 0;
+    width: 100vw;
+    height: 53px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #F87516 0%, #5E11FF 100%); 
+}
+.foot-cont{
+    font-size: 14px;
+    color: #EEE5FFBD;
+    margin-left: 20px;
+}
+.foot-cont a{
+    margin-right: 20px;
+}
